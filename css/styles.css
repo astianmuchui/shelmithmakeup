@@ -1,0 +1,1007 @@
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding: 0;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+*{
+    /* overflow-x: hidden; */
+    scroll-margin-top: 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+title{
+    background-color: rgb(241, 103, 103);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+header{
+    display: inline-flex;
+    background-color: rgba(0,0,0,0);
+    z-index: 9999;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    position: fixed;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+header nav{
+    display: inline-flex;
+    margin-left: 60%;
+    margin-top: 30px;
+}
+header nav ul{
+    display: inline-flex;
+}
+header nav ul li a{
+    padding: 0 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition-property: all ;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+header nav ul li a:hover{
+    color: rgba(0,0,0,0.7);
+}
+header nav ul li a:active{
+    text-decoration: underline 2px black;
+}
+.main{
+    /* padding-top: 150px; */
+    height: 100vh;
+    /* background-color: rgb(245, 77, 77); */
+    background: #fa7c71;
+    background-image: url("../images/stick.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.intro p{
+    color: white;
+    left: 90px;
+    top: 140px;
+    position: relative;   
+    font-size: 35px;
+    animation: slideUp;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.59, 0.575, 0.565, 1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.intro{
+    position: relative;
+    top: 100px; 
+}
+.icons{
+    left: 90px;
+    top: 190px;
+    position: relative;
+}
+i{
+    font-size: 30px;
+    padding: 3px 5px;
+    font-weight: bolder;
+    transition-property: all;
+    transition-duration: 2s;
+}
+i:hover{
+    transform: translateY(-6px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.border{
+    border-bottom: 7px solid black;
+    width: 70px;
+    left: 90px;
+    top: 200px;
+    margin-bottom: 10px;
+    position: relative;
+    animation-name: extend;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn{
+    width: max-content;
+    left: 90px;
+    top: 320px;
+    position: relative;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 20px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 3%;
+    font-size: 14px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.787, 0.135, 0.15, 0.86);
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;  
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+@keyframes extend{
+    0%{
+        width: 1px;
+    }
+    100%{
+        width: 70px;
+        opacity: 1;
+    }
+}
+@keyframes slideUp{
+    0%{
+     top: 160px;
+     opacity: 0;   
+    }
+    100%{
+        top: 140px;
+        opacity: 1;   
+    }
+}
+@keyframes slideIn{
+    0%{
+        left: -90px;
+        opacity: 0;
+    }
+    100%{
+        left: 90px;
+        opacity: 1;
+    }
+}
+.services{
+    height: 100vh;
+    background-color: white;
+    box-sizing: border-box;
+}
+.card{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width: 900px;
+    height: 264px;
+    display: inline-flex;
+    box-shadow: 0.5px rgb(65, 64, 64);
+    text-align: center;
+}
+.makeup{
+    position: relative;
+    top: 80px;
+    left: 250px;
+    width: 900px;
+    background-color: #c1ccc8;
+    color: #08132e;
+    height: 264px;
+    display: inline-flex;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.makeup img{
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+.card h2{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.desc{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 10px;
+    top: 50px;
+    left: 10px;   
+}
+.other-service img{
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+.other-service{
+    position: relative;
+    top: 90px;
+    left: 250px;
+    width: 900px;
+    height: 264.3px;
+    display: inline-flex;
+    background-color: #00030a;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.bg-container{
+    background-color: #000;
+}
+.about-wrapper{
+    background: url(images/new_.svg);
+    background-color: pink;
+   background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    background-position-y: 60px;
+    width: 100%;
+    background-position-x: -3px;
+}
+.card a{
+    position: relative;
+    left: 115px;
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 1.5s;
+}
+.card a:hover{
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: rgb(255, 254, 254);
+    border-color: transparent;
+}
+.a:hover{
+    transform: translateX(4px);
+    transition: all 1s ease-in;
+}   
+.about{
+    height: 99vh;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.about p{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about .border{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.contain{
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+.contain ul{
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    list-style-type: disc;
+    display: inline-flex;
+}
+.contain ul li{
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bolder;
+    height: max-content;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 20px;
+    position: relative;
+    left: 30%;
+    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.contain ul li i{
+    color: #eb7065;
+    font-size: 40px;
+}
+.contain ul li:hover{
+    transform: scale(1.05);
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    padding-top: 100px;
+}
+.contact h1{
+    color: pink;
+    position: relative;
+    left: 125px;
+}
+.contact form{
+    position: relative;
+    left: 33%;
+    border: pink 1px solid;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+}
+.contact form input{
+    background: transparent;
+    border: 2px solid pink;
+    height: 20px;
+    width: 450px;
+    padding: 10px;
+    text-align: center;   
+    color: pink;
+}
+.contact form textarea{
+    background: transparent;
+    border: 2px solid pink;
+    height: 50px;
+    width: 450px;
+    padding: 10px;
+    text-align: center;
+    color: pink;
+}
+::placeholder{
+    opacity: 1;
+    color: pink;
+}
+label{
+    color: pink;
+}
+#submit{
+    background: pink;
+    border: 2px solid pink;
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    position: relative;
+    left: 120px;
+}
+.gallery{
+    padding-top: 60px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery h1{
+    color: black;
+}
+.gallery img{
+    margin-left: 20px;
+    transition: all 1s ease-out;
+}
+.gallery img:nth-child(1):hover{
+    transform: translateX(10px);
+}
+.gallery img:nth-child(2):hover{
+    transform: translateY(-10px);
+}
+.gallery img:nth-child(3):hover{
+    transform: translateX(-10px);
+}
+.gallery > div{
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+.gallery span{
+    position: relative;
+    left: 33%;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.gallery span a{
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 5px 20px 10px 20px;
+    color: rgb(214, 99, 99);
+    background-color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+}
+.gallery span a i{
+    position: relative;
+    top: 5px;
+}
+.gallery span a:hover{
+    opacity: 0.95;
+}
+.footer{
+    background-color: #000000;
+    width: 100%;
+    height: max-content;
+    padding: 20px 0 30px 0;
+    display: inline-flex;
+    color: white ;
+}
+.footer div{
+    width: 30%;
+    margin: 0 30px;
+}
+.footer i{
+    color: white;
+}
+.footer a{
+    color: white;
+}
+.social p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.social {
+    position: relative;
+    top: 50px;
+    height: max-content;
+}
+.social i{
+    font-size: 1.3em;
+    width: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    color: #000;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 3px;
+}
+.social p,
+.social span{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.links{
+    padding: 0 0;
+    font-weight: 600;
+    font-size: 14px;    
+}
+.links ul li {
+    padding: 0 0 10px 0;
+}
+.footer a:hover{
+    color: #ee9c94;
+}
+.contact_details {
+    position: relative;
+    top: 40px;
+    height: max-content;
+}
+.contact_details li{
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact_details li i{
+font-size: 13px;    
+}
+
+
+/* menu.css imports */
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* overflow: hidden; */
+}
+.toggle{
+    display: none;
+}
+
+    .hamburger{
+        overflow: hidden;
+        position: relative;
+        top: 5px;
+        padding: 2px 10px 30px  10px;
+        height: 30px;
+        width: max-content;
+        display: none; 
+        float: right;   
+        cursor: pointer;
+        margin: 0 50px 0 0;
+        
+    }
+    .hamburger div{
+        background-color: black;
+        height: 2px;
+        width: 60px;
+        margin: 20px 0;
+    }
+hr{
+    display: none;
+}
+menu *{
+    overflow: hidden;
+}
+menu {
+    overflow: hidden;
+    z-index: 333;
+    text-align: center;
+    background-color: #e4229a6e;
+    color: black;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+    left: 0px;
+    top: 67px;
+    height: 100vh; 
+    display: none; 
+    position: fixed;
+    animation: slide 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+}
+@keyframes slide{
+    0%{
+        /* position: relative; */
+        left: 2520px;
+    }
+    100%{
+        left: 0%;
+    }
+}
+menu ul li{
+    height: 12vh;
+    color: black;
+}
+menu ul li a{ 
+    color: black;
+}
+menu ul li a:hover{
+    color: rgb(18, 19, 19);
+    transform: scale(1.02);
+}
+menu span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    left: 20px;
+    top: 330px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.3em;
+    width: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    color: #000;
+    border-radius: 2em; 
+    background-color: white;
+    
+}
+/* end of imports */
+
+/* RESPONSIVENESS */
+/* Smart phone */
+@media (max-width:400px){
+    body{
+        overflow-x: hidden;
+        max-width: 400px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    div{
+        overflow-x: hidden;
+    }
+    header{
+        
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header nav{
+        display: none;
+    }
+    .hamburger{
+        overflow-x: hidden;
+        display: block;
+        position: relative;
+        left: 50%;
+    }
+    menu .toggle{
+        width: 100%;
+    }
+    .main{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 120vh;
+    }
+    .intro{
+        position: relative;
+        top: 0;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .intro p{
+        position: relative;
+        left: 0;
+        top: 30px;
+        animation: none;
+        display: block;
+        opacity: 1;
+        color: #e45e52;
+    }
+    .icons{
+        position: relative;
+        left: 0;
+        top: 90px;  
+    }
+    .border{
+        display: none;
+    }
+    .btn{
+     top: -50px;
+     margin: 0;
+     left: 20px;
+     opacity: 1;
+     animation: none;   
+    }
+    /* Intro area styled */
+    .services{
+        height: 210vh;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .services .card{
+        top: 0;
+        width: 88%;
+        height: 590px;
+        position: relative;
+        left: 0;
+        display: block;
+        border: none;
+        margin: 20px 0 0 0;
+    }
+    
+    .makeup , .other-service{
+        width: 88%;
+        height: 590px;
+    }
+    .card img{
+        border: none;
+    }
+    .card a{
+        left: 10px;
+    }
+    .card .a{
+        /* overflow-x: auto; */
+        position: relative;
+        left: -10px;
+        /* height: 40px; */
+        padding: 10px 20px;
+    }
+    .bg-container{
+        background: white;
+    
+    }
+    .about-wrapper{
+        margin-top: 30px;
+        background: #ffffff;
+        height: 180vh;   
+        overflow: hidden;
+    }
+    .contain{
+        left: 1px;
+    }
+    .contain ul{
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        height: 110vh;
+        background-color: rgb(255, 255, 255);
+    }
+    .contain li{
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+    }
+    .about{
+        height: max-content;
+    }
+    .about p{
+        display: inline-flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        font-size: 3.5vw;
+        
+    }
+    .contact{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .contact h1{
+        left: 50px;
+    }
+    .contact form{
+        left: 0;
+        width: 90%;
+    }
+    .contact form input{
+        width: 83vw;
+    }
+    .contact form textarea{
+        width: 83vw;
+    }
+    #submit{
+        left: 10px;
+        width: 83vw;
+    }
+    .contain ul li{
+        left: 5%;
+    }
+    .gallery{
+        height: 263vh;
+    }
+    .gallery div{
+        top: 10px;
+    }
+    .gallery img{
+        left: 0;
+        margin: 10px 0 0 0;
+        width: 80%;
+        height: auto;
+    }
+    .footer{
+        margin-top: 10px;
+        display: block;
+        height: 99vh;
+    }
+    .footer div{
+        width: 100%;
+    }
+}
+
+/* End of Smart phone query */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Tablets */
+@media (min-width:400.1px) and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+        max-width: 800px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    div{
+        overflow-x: hidden;
+    }
+    header{
+        
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header nav{
+        display: none;
+    }
+    .hamburger{
+        overflow-x: hidden;
+        display: block;
+        position: relative;
+        left: 50%;
+    }
+    menu .toggle{
+        width: 100%;
+    }
+    .main{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 120vh;
+    }
+    .intro{
+        position: relative;
+        top: 0;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .intro p{
+        position: relative;
+        left: 0;
+        top: 30px;
+        animation: none;
+        display: block;
+        opacity: 1;
+        color: #e45e52;
+    }
+    .icons{
+        position: relative;
+        left: 0;
+        top: 90px;  
+    }
+    .border{
+        display: none;
+    }
+    .btn{
+     top: -50px;
+     margin: 0;
+     left: 20px;
+     opacity: 1;
+     animation: none;   
+    }
+    /* Intro area styled */
+    .services{
+        height: 210vh;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .services .card{
+        top: 0;
+        width: 88%;
+        height: 590px;
+        position: relative;
+        left: 0;
+        display: block;
+        border: none;
+        margin: 20px 0 0 0;
+    }
+    
+    .makeup , .other-service{
+        width: 88%;
+        height: 590px;
+    }
+    .card img{
+        border: none;
+    }
+    .card a{
+        left: 10px;
+    }
+    .card .a{
+        /* overflow-x: auto; */
+        position: relative;
+        left: -10px;
+        /* height: 40px; */
+        padding: 10px 20px;
+    }
+    .bg-container{
+        background: white;
+    
+    }
+    .about-wrapper{
+        margin-top: 30px;
+        background: #ffffff;
+        height: 190vh;   
+        overflow: hidden;
+    }
+    .contain{
+        left: 1px;
+    }
+    .contain ul{
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        height: 110vh;
+        background-color: rgb(255, 255, 255);
+    }
+    .contain li{
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+    }
+    .about{
+        height: max-content;
+    }
+    .about p{
+        display: inline-flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        font-size: 3.5vw;
+        
+    }
+    .contact{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .contact h1{
+        left: 50px;
+    }
+    .contact form{
+        left: 0;
+        width: 85vw;
+    }
+    .contact form input{
+        width: 80vw;
+    }
+    .contact form textarea{
+        width: 80vw;
+    }
+    #submit{
+        left: 10px;
+        width: 83vw;
+    }
+    .contain ul li{
+        left: 5%;
+    }
+    .gallery{
+        height: max-content;
+    }
+    .gallery div{
+        top: 10px;
+    }
+    .gallery img{
+        left: 0;
+        margin: 10px 0 0 0;
+        width: 80%;
+        height: auto;
+    }
+    .footer{
+        margin-top: 10px;
+        display: block;
+        height: 99vh;
+    }
+    .footer div{
+        width: 100%;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
